@@ -46,7 +46,7 @@ console.log(allowedPets);
 //      if adventurous is true, set `result` to be "Adventures are great!", 
 //      if it's not true,  set `result` to be "How about we stay home?"
 //      Console log the value of `result`
-let result = adventurous;
+let result
 
 if (adventurous == true){
   result = 'Adventures are great!';
@@ -100,7 +100,17 @@ console.log(petStatus);
 //      assigns the highest value to `mostPets`. There's several possibilities --
 //      be sure to think through all the scenarios. 
 //      console.log `mostPets` after the conditional has run.
+let mostPets
 
+if (pets > friendsPets){
+  mostPets = pets;
+}
+
+if (friendsPets > pets){
+  mostPets = friendsPets;
+}
+
+console.log(mostPets);
 // 16 - Make a variable called `luckyResult`
 //      Write a *switch* statement that sets `luckyResult` to:
 //      "First is the worst" if your lucky number is 1
